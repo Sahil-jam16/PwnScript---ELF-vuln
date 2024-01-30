@@ -1,0 +1,13 @@
+ Title: Automated Buffer Overflow Attack using Python and Pwntools
+
+Abstract:
+Buffer overflow attacks are a common form of cyber attack that can allow an attacker to execute arbitrary code
+on a vulnerable system. In this project, we demonstrate how to perform an automated buffer overflow attack on a
+binary executable using Python and the Pwntools library. We use the argparse module to create command-line arguments
+that allow the user to specify whether the target executable will be run locally or remotely, and to specify the remote
+target's IP address and port number. We then use Pwntools to load the target executable into memory, construct a payload
+that overflows the buffer and overwrites the return address to execute a specified function, and to send the
+payload to the target executable either locally or remotely. Finally, the script enters interactive mode to allow
+the user to interact with the target executable after the buffer overflow occurs. This project demonstrates how
+Python and Pwntools can be used to automate the process of performing a buffer overflow attack,
+making it easier for security professionals to test the vulnerability of systems and applications.
